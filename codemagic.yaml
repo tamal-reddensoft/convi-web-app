@@ -8,7 +8,7 @@ workflows:
     environment:
       ios_signing:
         distribution_type: app_store
-        bundle_identifier: io.codemagic.sample.reactnative
+        bundle_identifier: com.convi.convi-web-app
       vars:
         BUNDLE_ID: "com.convi.convi-web-app"
         XCODE_WORKSPACE: "CodemagicSample.xcworkspace"  # Replace with your real workspace
