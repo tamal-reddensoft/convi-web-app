@@ -10,10 +10,10 @@ workflows:
         distribution_type: app_store
         bundle_identifier: io.codemagic.sample.reactnative
       vars:
-        BUNDLE_ID: "io.codemagic.sample.reactnative"
+        BUNDLE_ID: "com.convi.convi-web-app"
         XCODE_WORKSPACE: "CodemagicSample.xcworkspace"  # Replace with your real workspace
         XCODE_SCHEME: "CodemagicSample"                # Replace with your real scheme
-        APP_STORE_APPLE_ID: 1555555551                  # Replace with your real App Store app ID
+        APP_STORE_APPLE_ID: 55S8BY79YX                   # Replace with your real App Store app ID
     scripts:
       - name: Install npm dependencies
         script: |
