@@ -22,7 +22,6 @@ export function usePushNotifications() {
     registerForPushNotificationsAsync().then(token => {
         // console.log('Received token:', token);
       if (token) {
-        
         console.log('Expo Push Token:', token);
         setExpoPushToken(token);
       }
@@ -47,12 +46,10 @@ export function usePushNotifications() {
 
 async function registerForPushNotificationsAsync() {
   if (Device.isDevice) {
-
     
     const { status: existingStatus } = await Notifications.getPermissionsAsync();
     let finalStatus = existingStatus;
 
-    
 
     if (existingStatus !== 'granted') {
       const { status } = await Notifications.requestPermissionsAsync();
